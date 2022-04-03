@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vaker | vdoc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+		<link rel="stylesheet" href="doc.css" />
+		<link rel="stylesheet" href="normalize.css" />
+		<script src="dark-mode.js"></script>
+</head>
+
+<body>
+  <div><a id="skip-to-content-link" href="#main-content">Skip to content</a></div>
+  <div id="page">
+    <header class="doc-nav hidden">
+      <div class="heading-container">
+        <div class="heading">
+          <div class="info">
+            <div class="module">vaker</div>
+            <div class="toggle-version-container">
+              <span> f75ce9d</span>
+              <div id="dark-mode-toggle" role="switch" aria-checked="false" aria-label="Toggle dark mode"><svg xmlns="http://www.w3.org/2000/svg" class="light-icon" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="dark-icon" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><rect fill="none" height="24" width="24"/></g><g><g><g><path d="M11.1,12.08C8.77,7.57,10.6,3.6,11.63,2.01C6.27,2.2,1.98,6.59,1.98,12c0,0.14,0.02,0.28,0.02,0.42 C2.62,12.15,3.29,12,4,12c1.66,0,3.18,0.83,4.1,2.15C9.77,14.63,11,16.17,11,18c0,1.52-0.87,2.83-2.12,3.51 c0.98,0.32,2.03,0.5,3.11,0.5c3.5,0,6.58-1.8,8.37-4.52C18,17.72,13.38,16.52,11.1,12.08z"/></g><path d="M7,16l-0.18,0C6.4,14.84,5.3,14,4,14c-1.66,0-3,1.34-3,3s1.34,3,3,3c0.62,0,2.49,0,3,0c1.1,0,2-0.9,2-2 C9,16.9,8.1,16,7,16z"/></g></g></svg>
+</div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" id="toggle-menu" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+
+          </div>
+          <input type="text" id="search" placeholder="Search... (beta)" autocomplete="off">
+        </div>
+      </div>
+      <nav class="search hidden"></nav>
+      <nav class="content hidden">
+        <ul>
+          <li class="open"><a href="#Constants">Constants</a></li>
+<li class="open"><a href="#amount">fn amount</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#amount_with_currency">fn amount_with_currency</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#cast_assign">fn cast_assign</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#cc_number">fn cc_number</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#cc_type">fn cc_type</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#century">fn century</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#chinese_first_name">fn chinese_first_name</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#chinese_last_name">fn chinese_last_name</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#chinese_name">fn chinese_name</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#currency">fn currency</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#date">fn date</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#day_of_week">fn day_of_week</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#digit">fn digit</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#domain_name">fn domain_name</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#e164_phone_number">fn e164_phone_number</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#email">fn email</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#fake_data">fn fake_data</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#fake_data_wdf">fn fake_data_wdf</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#first_name">fn first_name</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#first_name_female">fn first_name_female</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#first_name_male">fn first_name_male</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#gender">fn gender</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#hyphenated">fn hyphenated</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#insert_sep">fn insert_sep</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#ipv4">fn ipv4</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#ipv6">fn ipv6</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#is_type">fn is_type</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#jwt">fn jwt</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#last_name">fn last_name</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#latitude">fn latitude</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#longitude">fn longitude</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#mac_address">fn mac_address</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#month">fn month</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#name">fn name</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#new_df">fn new_df</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#paragraph">fn paragraph</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#password">fn password</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#period">fn period</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#phone_number">fn phone_number</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#rand_digit_string">fn rand_digit_string</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#rand_element">fn rand_element</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#rand_string">fn rand_string</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#sentence">fn sentence</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#time">fn time</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#timestamp">fn timestamp</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#timezone">fn timezone</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#title_female">fn title_female</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#title_male">fn title_male</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#toll_free_phone_number">fn toll_free_phone_number</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#unix_t">fn unix_t</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#unix_time">fn unix_time</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#url">fn url</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#user_name">fn user_name</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#word">fn word</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#year">fn year</a>        <ul>
+</ul>
+</li>
+<li class="open"><a href="#DataFaker">struct DataFaker</a>        <ul>
+<li><a href="#DataFaker.register">fn register</a></li>
+<li><a href="#DataFaker.has_unit">fn has_unit</a></li>
+<li><a href="#DataFaker.register_fn">fn register_fn</a></li>
+<li><a href="#DataFaker.add_type">fn add_type</a></li>
+<li><a href="#DataFaker.has_attribute">fn has_attribute</a></li>
+</ul>
+</li>
+
+        </ul>
+      </nav>
+    </header>
+    <div class="doc-scrollview" id="main-content">
+      <div class="doc-container">
+        <div class="doc-content">
+          						<section id="vaker" class="doc-node">
+							<div class="title"><h1> vaker</h1></div>
+
+</section>
+
+						<section id="Constants" class="doc-node const">
+							<div class="title"><h2>Constants <a href="#Constants">#</a></h2></div>
+
+</section>
+						<section id="" class="doc-node const">
+<pre class="signature"><code><span class="token keyword">const</span> <span class="token punctuation">(</span>
+	lb_eng <span class="token operator">=</span> <span class="token symbol">LangaugeBoundary</span><span class="token punctuation">{</span><span class="token number">65</span><span class="token punctuation">,</span> <span class="token number">122</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">91</span><span class="token punctuation">,</span> <span class="token number">92</span><span class="token punctuation">,</span> <span class="token number">93</span><span class="token punctuation">,</span> <span class="token number">94</span><span class="token punctuation">,</span> <span class="token number">95</span><span class="token punctuation">,</span> <span class="token number">96</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+	lb_chi <span class="token operator">=</span> <span class="token symbol">LangaugeBoundary</span><span class="token punctuation">{</span><span class="token number">19968</span><span class="token punctuation">,</span> <span class="token number">40869</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+	lb_rus <span class="token operator">=</span> <span class="token symbol">LangaugeBoundary</span><span class="token punctuation">{</span><span class="token number">1025</span><span class="token punctuation">,</span> <span class="token number">1105</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+	lb_jpn <span class="token operator">=</span> <span class="token symbol">LangaugeBoundary</span><span class="token punctuation">{</span><span class="token number">12353</span><span class="token punctuation">,</span> <span class="token number">12534</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">12436</span><span class="token punctuation">,</span> <span class="token number">12437</span><span class="token punctuation">,</span> <span class="token number">12438</span><span class="token punctuation">,</span> <span class="token number">12439</span><span class="token punctuation">,</span> <span class="token number">12440</span><span class="token punctuation">,</span> <span class="token number">12441</span><span class="token punctuation">,</span> <span class="token number">12442</span><span class="token punctuation">,</span> <span class="token number">12443</span><span class="token punctuation">,</span>
+		<span class="token number">12444</span><span class="token punctuation">,</span> <span class="token number">12445</span><span class="token punctuation">,</span> <span class="token number">12446</span><span class="token punctuation">,</span> <span class="token number">12447</span><span class="token punctuation">,</span> <span class="token number">12448</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+	lb_kor <span class="token operator">=</span> <span class="token symbol">LangaugeBoundary</span><span class="token punctuation">{</span><span class="token number">44032</span><span class="token punctuation">,</span> <span class="token number">55203</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+	lb_emj <span class="token operator">=</span> <span class="token symbol">LangaugeBoundary</span><span class="token punctuation">{</span><span class="token number">126976</span><span class="token punctuation">,</span> <span class="token number">129535</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">)</span></code></pre>
+<p>Language Boundaries</p>
+
+</section>
+						<section id="amount" class="doc-node">
+							<div class="title"><h2>fn amount <a href="#amount">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">amount</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="amount_with_currency" class="doc-node">
+							<div class="title"><h2>fn amount_with_currency <a href="#amount_with_currency">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">amount_with_currency</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="cast_assign" class="doc-node">
+							<div class="title"><h2>fn cast_assign <a href="#cast_assign">#</a></h2></div><div class="attributes"><div class="attribute">unsafe</div></div>
+<pre class="signature"><code><span class="token keyword">fn</span> cast_assign<span class="token operator"><</span><span class="token builtin">T</span><span class="token operator">></span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">,</span> value <span class="token builtin">T</span><span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="cc_number" class="doc-node">
+							<div class="title"><h2>fn cc_number <a href="#cc_number">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">cc_number</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="cc_type" class="doc-node">
+							<div class="title"><h2>fn cc_type <a href="#cc_type">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">cc_type</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="century" class="doc-node">
+							<div class="title"><h2>fn century <a href="#century">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">century</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="chinese_first_name" class="doc-node">
+							<div class="title"><h2>fn chinese_first_name <a href="#chinese_first_name">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">chinese_first_name</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="chinese_last_name" class="doc-node">
+							<div class="title"><h2>fn chinese_last_name <a href="#chinese_last_name">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">chinese_last_name</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="chinese_name" class="doc-node">
+							<div class="title"><h2>fn chinese_name <a href="#chinese_name">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">chinese_name</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="currency" class="doc-node">
+							<div class="title"><h2>fn currency <a href="#currency">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">currency</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="date" class="doc-node">
+							<div class="title"><h2>fn date <a href="#date">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">date</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="day_of_week" class="doc-node">
+							<div class="title"><h2>fn day_of_week <a href="#day_of_week">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">day_of_week</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="digit" class="doc-node">
+							<div class="title"><h2>fn digit <a href="#digit">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">digit</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="domain_name" class="doc-node">
+							<div class="title"><h2>fn domain_name <a href="#domain_name">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">domain_name</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="e164_phone_number" class="doc-node">
+							<div class="title"><h2>fn e164_phone_number <a href="#e164_phone_number">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">e164_phone_number</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="email" class="doc-node">
+							<div class="title"><h2>fn email <a href="#email">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">email</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="fake_data" class="doc-node">
+							<div class="title"><h2>fn fake_data <a href="#fake_data">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> fake_data<span class="token operator"><</span><span class="token builtin">T</span><span class="token operator">></span><span class="token punctuation">(</span>t <span class="token operator">&</span><span class="token builtin">T</span><span class="token punctuation">)</span></code></pre>
+<p>Faking data with default options</p>
+
+</section>
+						<section id="fake_data_wdf" class="doc-node">
+							<div class="title"><h2>fn fake_data_wdf <a href="#fake_data_wdf">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> fake_data_wdf<span class="token operator"><</span><span class="token builtin">T</span><span class="token operator">></span><span class="token punctuation">(</span>t <span class="token operator">&</span><span class="token builtin">T</span><span class="token punctuation">,</span> df <span class="token operator">&</span>DataFaker<span class="token punctuation">)</span></code></pre>
+<p>Faking data with custom options</p>
+
+</section>
+						<section id="first_name" class="doc-node">
+							<div class="title"><h2>fn first_name <a href="#first_name">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">first_name</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="first_name_female" class="doc-node">
+							<div class="title"><h2>fn first_name_female <a href="#first_name_female">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">first_name_female</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="first_name_male" class="doc-node">
+							<div class="title"><h2>fn first_name_male <a href="#first_name_male">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">first_name_male</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="gender" class="doc-node">
+							<div class="title"><h2>fn gender <a href="#gender">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">gender</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="hyphenated" class="doc-node">
+							<div class="title"><h2>fn hyphenated <a href="#hyphenated">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">hyphenated</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="insert_sep" class="doc-node">
+							<div class="title"><h2>fn insert_sep <a href="#insert_sep">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">insert_sep</span><span class="token punctuation">(</span>str <span class="token builtin">string</span><span class="token punctuation">,</span> sep <span class="token builtin">string</span><span class="token punctuation">,</span> step <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">string</span></code></pre>
+
+
+</section>
+						<section id="ipv4" class="doc-node">
+							<div class="title"><h2>fn ipv4 <a href="#ipv4">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">ipv4</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="ipv6" class="doc-node">
+							<div class="title"><h2>fn ipv6 <a href="#ipv6">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">ipv6</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="is_type" class="doc-node">
+							<div class="title"><h2>fn is_type <a href="#is_type">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> is_type<span class="token operator"><</span><span class="token builtin">T</span><span class="token operator">></span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span> <span class="token builtin">bool</span></code></pre>
+
+
+</section>
+						<section id="jwt" class="doc-node">
+							<div class="title"><h2>fn jwt <a href="#jwt">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">jwt</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="last_name" class="doc-node">
+							<div class="title"><h2>fn last_name <a href="#last_name">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">last_name</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="latitude" class="doc-node">
+							<div class="title"><h2>fn latitude <a href="#latitude">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">latitude</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="longitude" class="doc-node">
+							<div class="title"><h2>fn longitude <a href="#longitude">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">longitude</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="mac_address" class="doc-node">
+							<div class="title"><h2>fn mac_address <a href="#mac_address">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">mac_address</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="month" class="doc-node">
+							<div class="title"><h2>fn month <a href="#month">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">month</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="name" class="doc-node">
+							<div class="title"><h2>fn name <a href="#name">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">name</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="new_df" class="doc-node">
+							<div class="title"><h2>fn new_df <a href="#new_df">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">new_df</span><span class="token punctuation">(</span><span class="token punctuation">)</span> DataFaker</code></pre>
+<p>Creates a new DataFaker from global one</p>
+
+</section>
+						<section id="paragraph" class="doc-node">
+							<div class="title"><h2>fn paragraph <a href="#paragraph">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">paragraph</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="password" class="doc-node">
+							<div class="title"><h2>fn password <a href="#password">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">password</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="period" class="doc-node">
+							<div class="title"><h2>fn period <a href="#period">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">period</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="phone_number" class="doc-node">
+							<div class="title"><h2>fn phone_number <a href="#phone_number">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">phone_number</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="rand_digit_string" class="doc-node">
+							<div class="title"><h2>fn rand_digit_string <a href="#rand_digit_string">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">rand_digit_string</span><span class="token punctuation">(</span>len <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">string</span></code></pre>
+
+
+</section>
+						<section id="rand_element" class="doc-node">
+							<div class="title"><h2>fn rand_element <a href="#rand_element">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> rand_element<span class="token operator"><</span><span class="token builtin">T</span><span class="token operator">></span><span class="token punctuation">(</span>arr <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">T</span><span class="token punctuation">)</span> <span class="token builtin">T</span></code></pre>
+
+
+</section>
+						<section id="rand_string" class="doc-node">
+							<div class="title"><h2>fn rand_string <a href="#rand_string">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">rand_string</span><span class="token punctuation">(</span>len <span class="token builtin">int</span><span class="token punctuation">,</span> lb <span class="token operator">&</span>LangaugeBoundary<span class="token punctuation">)</span> <span class="token builtin">string</span></code></pre>
+
+
+</section>
+						<section id="sentence" class="doc-node">
+							<div class="title"><h2>fn sentence <a href="#sentence">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">sentence</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="time" class="doc-node">
+							<div class="title"><h2>fn time <a href="#time">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">time</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="timestamp" class="doc-node">
+							<div class="title"><h2>fn timestamp <a href="#timestamp">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">timestamp</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="timezone" class="doc-node">
+							<div class="title"><h2>fn timezone <a href="#timezone">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">timezone</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="title_female" class="doc-node">
+							<div class="title"><h2>fn title_female <a href="#title_female">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">title_female</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="title_male" class="doc-node">
+							<div class="title"><h2>fn title_male <a href="#title_male">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">title_male</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="toll_free_phone_number" class="doc-node">
+							<div class="title"><h2>fn toll_free_phone_number <a href="#toll_free_phone_number">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">toll_free_phone_number</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="unix_t" class="doc-node">
+							<div class="title"><h2>fn unix_t <a href="#unix_t">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">unix_t</span><span class="token punctuation">(</span><span class="token punctuation">)</span> time<span class="token punctuation">.</span>Time</code></pre>
+
+
+</section>
+						<section id="unix_time" class="doc-node">
+							<div class="title"><h2>fn unix_time <a href="#unix_time">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">unix_time</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="url" class="doc-node">
+							<div class="title"><h2>fn url <a href="#url">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">url</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="user_name" class="doc-node">
+							<div class="title"><h2>fn user_name <a href="#user_name">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">user_name</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="word" class="doc-node">
+							<div class="title"><h2>fn word <a href="#word">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">word</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="year" class="doc-node">
+							<div class="title"><h2>fn year <a href="#year">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token function">year</span><span class="token punctuation">(</span>ptr PtrInfo<span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="DataFaker" class="doc-node">
+							<div class="title"><h2>struct DataFaker <a href="#DataFaker">#</a></h2></div><pre class="signature"><code><span class="token keyword">struct</span> <span class="token symbol">DataFaker</span> <span class="token punctuation">{</span>
+<span class="token keyword">mut</span><span class="token punctuation">:</span>
+	lb                           <span class="token operator">&</span>LangaugeBoundary <span class="token operator">=</span> <span class="token operator">&</span>vaker<span class="token punctuation">.</span>lb_eng
+	str_len                      <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">10</span>
+	max_arr_len                  <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">10</span>
+	min_arr_len                  <span class="token builtin">int</span>
+	max_map_len                  <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">10</span>
+	min_map_len                  <span class="token builtin">int</span>
+	rand_max_sz                  <span class="token builtin">i64</span> <span class="token operator">=</span> <span class="token number">100</span>
+	rand_min_sz                  <span class="token builtin">i64</span>
+	rand_max_usz                 <span class="token builtin">u64</span> <span class="token operator">=</span> <span class="token number">100</span>
+	rand_min_usz                 <span class="token builtin">u64</span>
+	rand_max_fsz                 <span class="token builtin">f64</span> <span class="token operator">=</span> <span class="token number">100</span>
+	rand_min_fsz                 <span class="token builtin">f64</span>
+	primitive_invokers           PrimitiveInvokers <span class="token operator">=</span> vaker<span class="token punctuation">.</span>primitive_invokers
+	external_attribute_functions <span class="token builtin">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span>ExternalAttributeFn <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+	attribute_functions          <span class="token builtin">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token keyword">fn</span> <span class="token punctuation">(</span>PtrInfo<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+		<span class="token string">'amount'</span><span class="token punctuation">:</span>                 amount
+		<span class="token string">'amount_with_currency'</span><span class="token punctuation">:</span>   amount_with_currency
+		<span class="token string">'cc_number'</span><span class="token punctuation">:</span>              cc_number
+		<span class="token string">'cc_type'</span><span class="token punctuation">:</span>                cc_type
+		<span class="token string">'century'</span><span class="token punctuation">:</span>                century
+		<span class="token string">'chinese_first_name'</span><span class="token punctuation">:</span>     chinese_first_name
+		<span class="token string">'chinese_last_name'</span><span class="token punctuation">:</span>      chinese_last_name
+		<span class="token string">'chinese_name'</span><span class="token punctuation">:</span>           chinese_name
+		<span class="token string">'currency'</span><span class="token punctuation">:</span>               currency
+		<span class="token string">'date'</span><span class="token punctuation">:</span>                   date
+		<span class="token string">'day_of_week'</span><span class="token punctuation">:</span>            day_of_week
+		<span class="token string">'domain_name'</span><span class="token punctuation">:</span>            domain_name
+		<span class="token string">'e164_phone_number'</span><span class="token punctuation">:</span>      e164_phone_number
+		<span class="token string">'email'</span><span class="token punctuation">:</span>                  email
+		<span class="token string">'first_name'</span><span class="token punctuation">:</span>             first_name
+		<span class="token string">'first_name_female'</span><span class="token punctuation">:</span>      first_name_female
+		<span class="token string">'first_name_male'</span><span class="token punctuation">:</span>        first_name_male
+		<span class="token string">'gender'</span><span class="token punctuation">:</span>                 gender
+		<span class="token string">'ipv4'</span><span class="token punctuation">:</span>                   ipv4
+		<span class="token string">'ipv6'</span><span class="token punctuation">:</span>                   ipv6
+		<span class="token string">'jwt'</span><span class="token punctuation">:</span>                    jwt
+		<span class="token string">'last_name'</span><span class="token punctuation">:</span>              last_name
+		<span class="token string">'lat'</span><span class="token punctuation">:</span>                    latitude
+		<span class="token string">'long'</span><span class="token punctuation">:</span>                   longitude
+		<span class="token string">'mac_address'</span><span class="token punctuation">:</span>            mac_address
+		<span class="token string">'month'</span><span class="token punctuation">:</span>                  month
+		<span class="token string">'name'</span><span class="token punctuation">:</span>                   name
+		<span class="token string">'paragraph'</span><span class="token punctuation">:</span>              paragraph
+		<span class="token string">'password'</span><span class="token punctuation">:</span>               password
+		<span class="token string">'period'</span><span class="token punctuation">:</span>                 period
+		<span class="token string">'phone_number'</span><span class="token punctuation">:</span>           phone_number
+		<span class="token string">'sentence'</span><span class="token punctuation">:</span>               sentence
+		<span class="token string">'title_female'</span><span class="token punctuation">:</span>           title_female
+		<span class="token string">'title_male'</span><span class="token punctuation">:</span>             title_male
+		<span class="token string">'time'</span><span class="token punctuation">:</span>                   time
+		<span class="token string">'timestamp'</span><span class="token punctuation">:</span>              timestamp
+		<span class="token string">'timezone'</span><span class="token punctuation">:</span>               timezone
+		<span class="token string">'toll_free_phone_number'</span><span class="token punctuation">:</span> toll_free_phone_number
+		<span class="token string">'unix_time'</span><span class="token punctuation">:</span>              unix_time
+		<span class="token string">'url'</span><span class="token punctuation">:</span>                    url
+		<span class="token string">'user_name'</span><span class="token punctuation">:</span>              user_name
+		<span class="token string">'uuid_digit'</span><span class="token punctuation">:</span>             digit
+		<span class="token string">'uuid_hyphenated'</span><span class="token punctuation">:</span>        hyphenated
+		<span class="token string">'word'</span><span class="token punctuation">:</span>                   word
+		<span class="token string">'year'</span><span class="token punctuation">:</span>                   year
+	<span class="token punctuation">}</span>
+	current_attribute_function <span class="token operator">&</span><span class="token keyword">fn</span> <span class="token punctuation">(</span>PtrInfo<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token builtin">voidptr</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>DataFaker holds various data faking settings for vaker to process with</p>
+
+</section>
+						<section id="DataFaker.register" class="doc-node">
+							<div class="title"><h2>fn (DataFaker) register <a href="#DataFaker.register">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token punctuation">(</span><span class="token keyword">mut</span> df DataFaker<span class="token punctuation">)</span> <span class="token function">register</span><span class="token punctuation">(</span>unit_name <span class="token builtin">string</span><span class="token punctuation">)</span></code></pre>
+
+
+</section>
+						<section id="DataFaker.has_unit" class="doc-node">
+							<div class="title"><h2>fn (DataFaker) has_unit <a href="#DataFaker.has_unit">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token punctuation">(</span>df DataFaker<span class="token punctuation">)</span> <span class="token function">has_unit</span><span class="token punctuation">(</span>unit_name <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">bool</span></code></pre>
+
+
+</section>
+						<section id="DataFaker.register_fn" class="doc-node">
+							<div class="title"><h2>fn (DataFaker) register_fn <a href="#DataFaker.register_fn">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token punctuation">(</span><span class="token keyword">mut</span> df DataFaker<span class="token punctuation">)</span> register_fn<span class="token operator"><</span><span class="token builtin">T</span><span class="token operator">></span><span class="token punctuation">(</span>unit_name <span class="token builtin">string</span><span class="token punctuation">,</span> attribute_name <span class="token builtin">string</span><span class="token punctuation">,</span> fn_ptr <span class="token keyword">fn</span> <span class="token punctuation">(</span>PtrInfo<span class="token punctuation">)</span><span class="token punctuation">)</span> ?</code></pre>
+<p>register an attribute function with unit name and attribute name, must specify at least an acceptable type for attribute function to satisfy with</p>
+
+</section>
+						<section id="DataFaker.add_type" class="doc-node">
+							<div class="title"><h2>fn (DataFaker) add_type <a href="#DataFaker.add_type">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token punctuation">(</span><span class="token keyword">mut</span> df DataFaker<span class="token punctuation">)</span> add_type<span class="token operator"><</span><span class="token builtin">T</span><span class="token operator">></span><span class="token punctuation">(</span>unit_name <span class="token builtin">string</span><span class="token punctuation">,</span> attribute_name <span class="token builtin">string</span><span class="token punctuation">)</span> ?</code></pre>
+
+
+</section>
+						<section id="DataFaker.has_attribute" class="doc-node">
+							<div class="title"><h2>fn (DataFaker) has_attribute <a href="#DataFaker.has_attribute">#</a></h2></div><pre class="signature"><code><span class="token keyword">fn</span> <span class="token punctuation">(</span>df DataFaker<span class="token punctuation">)</span> <span class="token function">has_attribute</span><span class="token punctuation">(</span>unit_name <span class="token builtin">string</span><span class="token punctuation">,</span> attribute_name <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">bool</span></code></pre>
+
+
+</section>
+
+          <div class="footer">
+            Powered by vdoc. Generated on: 4 Apr 2022 03:10:05
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="doc.js"></script>
+  <script async src="search_index.js"></script>
+</body>
+
+</html>
